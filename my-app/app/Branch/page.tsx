@@ -3,7 +3,7 @@ import Link from "next/link";
 import { TbHome } from "react-icons/tb";
 import Menu from "../../component/menu"
 
-export default function Hobby() {
+export default function Branch() {
 
   return (
     <div className="flex min-h-screen">

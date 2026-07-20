@@ -48,27 +48,27 @@ export default function Menu() {
             </Link>       
         </div>
 
-        <Link href="/about">
+        <Link href="/Home">
         <div className="text-white p-[10px] mt-3 rounded-md flex items-center gap-1" style={{backgroundColor: '#737C75'}}>
-            <TbInfoSquareRounded />關於我
+            <TbInfoSquareRounded />首頁
         </div>
         </Link>
 
-        <Link href="/hobby">
+        <Link href="/Branch">
         <div className="text-white p-[10px] mt-3 rounded-md flex items-center gap-1" style={{backgroundColor: '#737C75'}}>
-            <TbBowlChopsticks />我的興趣
+            <TbBowlChopsticks />分站
         </div>
         </Link>
 
-        <Link href="/video">
+        <Link href="/Services">
         <div className="text-white p-[10px] mt-3 rounded-md flex items-center gap-1" style={{backgroundColor: '#737C75'}}>
-            <TbBrandYoutubeKids/>影片作品
+            <TbBrandYoutubeKids/>產品與服務
         </div>
         </Link>
 
-        <Link href="/project">
+        <Link href="/Joinus">
         <div className="text-white p-[10px] mt-3 rounded-md flex items-center gap-1" style={{backgroundColor: '#737C75'}}>
-            <TbBrandYoutubeKids/>學程專案
+            <TbBrandYoutubeKids/>加入我們
         </div>
         </Link>
     </div>

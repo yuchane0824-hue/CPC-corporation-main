@@ -2,7 +2,7 @@ import Link from "next/link";
 import { TbHome } from "react-icons/tb";
 import Menu from "../../component/menu"
 
-export default function project() {
+export default function Services() {
 
   return (
     <div className="flex min-h-screen">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { TbHome } from "react-icons/tb";
 import Menu from "../../component/menu"
 
-export default function About() {
+export default function Home() {
 
   return (
     <div className="flex h-full">

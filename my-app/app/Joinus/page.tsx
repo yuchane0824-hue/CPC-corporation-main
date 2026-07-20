@@ -2,7 +2,7 @@ import Link from "next/link";
 import { TbHome } from "react-icons/tb";
 import Menu from "../../component/menu"
 
-export default function video() {
+export default function Joinus() {
 
   return (
     <div className="flex h-full">

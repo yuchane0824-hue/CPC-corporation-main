@@ -1,18 +1,11 @@
-import Link from "next/link";
-import { TbHome } from "react-icons/tb";
+import Image from "next/image";
 import MenuPC from "../../component/menuPC"
-import MenuPh from "../../component/menuPh"
+import MenuPh from "../../component/menuPC"
 
 export default function Services() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Link href="/" className="block sm:hidden fixed bottom-7 left-7">
-          <div className="rounded-full p-3 flex items-center justify-center" style={{backgroundColor: '#737C75'}}>
-            <TbHome size={30} color="white"/>
-          </div>
-      </Link>
-
       {/* 選單 */}      
       <div className="w-full">
         <div className="block sm:hidden">
@@ -22,51 +15,28 @@ export default function Services() {
         <div className="sm:block hidden">
           <MenuPC />
         </div>
-      </div> 
+      </div>      
 
       {/* 主頁面 */}
-      <div className="w-full p-[20px]">
+      <div className="w-full">
         {/* 上半部 */}
-        <div className="p-[10px] flex flex-col justify-center items-center mt-3">
-          <p className="text-lg font-bold">----以下是我的作品們----</p>
-          <p className="text-sm">Java專案、友善食品界面、建模等</p>
+        <div className="flex p-[20px] gap-5">
+
+          <div className="p-[10px] rounded-md md:w-1/2" style={{backgroundColor: '#16425B'}}>
+            <p className="text-white text-lg font-bold">學經歷</p>
+            <p className="text-white">2022 加入政治大學心理學系</p>      
+          </div>
+
+          <div className="p-[10px] rounded-md md:w-1/2" style={{backgroundColor: '#16425B'}}>
+            <p className="text-white text-lg font-bold">專長</p>
+            <p className="text-white">2022 加入政治大學心理學系</p> 
+          </div>
+
         </div>
 
         {/* 下半部 */}
-        <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
-          <div className="rounded-md h-[200px] md:h-full flex justify-center items-end
-                          bg-[url(/app_02.png)] bg-center bg-cover overflow-hidden">
-            <div className="text-white bg-black/20 w-full h-[60px] flex
-                            justify-center items-center backdrop-blur-sm font-bold">
-              友善食品 UI/UX 介面
-            </div>
-          </div>
-        
-          <div className="rounded-md h-100 flex justify-center items-center col-span-2" style={{backgroundColor: '#EFF0EA'}}>
-            <iframe
-                src="https://www.youtube.com/embed/XAwzFlW32rw"
-                width="100%"
-                height="400"
-                allowFullScreen          
-            />
-          </div>
-
-          <div className="rounded-md h-100 flex justify-center items-center col-span-2" style={{backgroundColor: '#EFF0EA'}}>
-            <iframe
-                src="https://www.youtube.com/embed/f4UIfC5fuXo"
-                width="100%"
-                height="400"
-                allowFullScreen          
-            />
-          </div>
-
-          <div className="rounded-md h-[200px] md:h-full flex justify-center items-end
-                          bg-[url(/app_03.png)] bg-center bg-cover overflow-hidden">
-            <div className="text-white bg-black/20 w-full h-[60px] flex
-                            justify-center items-center backdrop-blur-sm font-bold">
-              友善食品 UI/UX 介面
-            </div>
-          </div>
+        <div className="flex p-[20px]">
+          <Image src="/CPC_Kh01.jpg" alt="mypic" width={1980} height={1020}/>
         </div>
       </div>
     </div>

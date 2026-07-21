@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { TbHome } from "react-icons/tb";
 import MenuPC from "../../component/menuPC"
 import MenuPh from "../../component/menuPh"
@@ -8,12 +8,6 @@ export default function Branch() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Link href="/" className="block sm:hidden fixed bottom-7 left-7">
-          <div className="rounded-full p-3 flex items-center justify-center" style={{backgroundColor: '#737C75'}}>
-            <TbHome size={30} color="white"/>
-          </div>
-      </Link>
-
       {/* 選單 */}      
       <div className="w-full">
         <div className="block sm:hidden">

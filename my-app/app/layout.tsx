@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "梁育禎的個人履歷",
-  description: "梁育禎的個人履歷",
+  title: "大誠加油站總站 CPC Corporation_奕誠文教事業",
+  description: "大誠加油站總站 CPC Corporation_奕誠文教事業",
 };
 
 export default function RootLayout({

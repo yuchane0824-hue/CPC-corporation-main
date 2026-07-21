@@ -1,13 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TbHome } from "react-icons/tb";
-import Menu from "../../component/menu"
+import MenuPC from "../../component/menuPC"
+import MenuPh from "../../component/menuPh"
 
 export default function Home() {
 
   return (
-    <div className="min-h-screen flex flex-col">      
-      <Menu />        
+    <div className="min-h-screen flex flex-col">
+      {/* 選單 */}      
+      <div className="w-full">
+        <div className="block sm:hidden">
+        <MenuPh />
+        </div>
+
+        <div className="sm:block hidden">
+          <MenuPC />
+        </div>
+      </div>      
 
       {/* 主頁面 */}
       <div className="w-full">

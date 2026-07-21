@@ -10,10 +10,10 @@ import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { TbBrandFacebookFilled } from "react-icons/tb";
 import { TbBrandInstagram } from "react-icons/tb";
 
-export default function Menu() {
+export default function MenuPC() {
 
   return (
-    <div className="bg-white w-full flex items-stretch h-auto md:h-[40px] shadow-sm">
+    <div className="bg-white w-full flex items-stretch h-auto md:h-[60px] shadow-sm">
       
       {/* <div className="flex justify-center gap-3 text-lg mt-3">
             <Link href="https://www.instagram.com/yuz824__/">
@@ -45,27 +45,27 @@ export default function Menu() {
         <Link href="/Home" className="flex-1 flex outline-none border-none">
         <div className="text-black px-4 py-2 gap-3 w-full h-full flex items-center justify-center
         whitespace-nowrap cursor-pointer transition-colors duration-300 hover:opacity-80 hover:text-gray-700">
-            <Image src="/LOGO.jpg" alt="LOGO" width={100} height={60}/>
+            <Image src="/LOGO.jpg" alt="LOGO" width={160} height={80}/>
             <span>首頁</span>
             </div>
         </Link>
 
         <Link href="/Branch" className="flex-1 flex">
-        <div className="text-black px-4 py-2 w-full h-full flex items-center justify-center
+        <div className="text-black px-4 py-2 gap-1 w-full h-full flex items-center justify-center
         whitespace-nowrap cursor-pointer transition-colors duration-300 hover:opacity-80 hover:bg-[#16425B] hover:text-white">
             <TbBowlChopsticks />服務據點
         </div>
         </Link>
 
         <Link href="/Services" className="flex-1 flex">
-        <div className="text-black px-4 py-2 w-full h-full flex items-center justify-center
+        <div className="text-black px-4 py-2 gap-1 w-full h-full flex items-center justify-center
         whitespace-nowrap cursor-pointer transition-colors duration-300 hover:opacity-80 hover:bg-[#16425B] hover:text-white">
             <TbBrandYoutubeKids/>產品與服務
         </div>
         </Link>
 
         <Link href="/Joinus" className="flex-1 flex">
-        <div className="text-black px-4 py-2 w-full h-full flex items-center justify-center
+        <div className="text-black px-4 py-2 gap-1 w-full h-full flex items-center justify-center
         whitespace-nowrap cursor-pointer transition-colors duration-300 hover:opacity-80 hover:bg-[#16425B] hover:text-white">
             <TbBrandYoutubeKids/>加入我們
         </div>

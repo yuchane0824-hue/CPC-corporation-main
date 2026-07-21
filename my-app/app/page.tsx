@@ -1,5 +1,5 @@
 "use client"
-import Menu from "../component/menu"
+import Menu from "../component/menuPC"
 
 export default function Home() {
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import MenuPC from "../../component/menuPC"
-import MenuPh from "../../component/menuPC"
+import MenuPh from "../../component/menuPh"
+import Footer from "../../component/footer"
 
 export default function Services() {
 
@@ -39,6 +40,8 @@ export default function Services() {
           <Image src="/CPC_Kh01.jpg" alt="mypic" width={1980} height={1020}/>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

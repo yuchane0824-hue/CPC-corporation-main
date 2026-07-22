@@ -15,10 +15,10 @@ export default function MenuPh() {
     <div className="w-full relative z-50 bg-white shadow-sm"> 
       
       {/* 頂部導覽列 */}
-      <div className="flex items-center justify-between px-4 py-2 h-[60px]">
+      <div className="flex items-center justify-between px-4 py-2 h-[80px]">
         {/* LOGO */}
         <Link href="/Home" className="outline-none border-none">
-          <Image src="/LOGO.jpg" alt="LOGO" width={120} height={60}/>
+          <Image src="/Logo_new.jpg" alt="LOGO" width={60} height={60}/>
         </Link>
 
         <button onClick={toggleMenu} className="text-3xl">

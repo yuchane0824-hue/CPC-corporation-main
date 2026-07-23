@@ -11,7 +11,7 @@ const branchData = [
     address: '高雄市楠梓區旗楠路400號',
     phone: '(07) 777-8888',
     time: '24 小時全年無休',
-    services: ['人工加油', '自助加油', '洗車服務', 'Gogoro 換電站'],
+    services: ['人工加油、自助加油、洗車服務'],
     top: '61%', 
     left: '50%'
   },
@@ -22,7 +22,7 @@ const branchData = [
     address: '桃園市中壢區中正路100號', 
     phone: '(03) 111-2222',
     time: '24 小時全年無休',
-    services: ['自助加油', '人工加油', '洗車服務', '加水打氣'],
+    services: ['人工加油、自助加油、洗車服務'],
     top: '23%', 
     left: '70%'
   },
@@ -33,7 +33,7 @@ const branchData = [
     address: '桃園市楊梅區中山北路200號',
     phone: '(03) 333-4444',
     time: '06:00 - 23:00',
-    services: ['人工加油', '洗車服務', '便利商店'],
+    services: ['人工加油、自助加油、洗車服務'],
     top: '27%', 
     left: '75%'
   },
@@ -44,7 +44,7 @@ const branchData = [
     address: '新竹縣湖口鄉八德路三段300號',
     phone: '(03) 555-6666',
     time: '24 小時全年無休',
-    services: ['自助加油', '大客車車道', '洗車服務'],
+    services: ['人工加油、自助加油、洗車服務'],
     top: '31%', 
     left: '70%'
   }

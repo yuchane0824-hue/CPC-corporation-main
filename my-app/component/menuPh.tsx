@@ -32,28 +32,28 @@ export default function MenuPh() {
         border-t bg-white border-gray-200 shadow-md">
           
           <Link href="/Home" onClick={toggleMenu}>
-            <div className="px-6 py-4 text-lg border-b transition-all hover:font-bold
+            <div className="px-6 py-6 text-lg border-b transition-all hover:font-bold
             text-gray-800 border-gray-200 hover:bg-gray-100 hover:text-[#16425B]">
               首頁
             </div>
           </Link>
 
           <Link href="/Branch" onClick={toggleMenu}>
-            <div className="px-6 py-4 text-lg border-b transition-all hover:font-bold
+            <div className="px-6 py-6 text-lg border-b transition-all hover:font-bold
             text-gray-800 border-gray-200 hover:bg-gray-100 hover:text-[#16425B]">
               服務據點
             </div>
           </Link>
 
           <Link href="/Services" onClick={toggleMenu}>
-            <div className="px-6 py-4 text-lg border-b transition-all hover:font-bold
+            <div className="px-6 py-6 text-lg border-b transition-all hover:font-bold
             text-gray-800 border-gray-200 hover:bg-gray-100 hover:text-[#16425B]">
               產品與服務
             </div>
           </Link>
 
           <Link href="/Joinus" onClick={toggleMenu}>
-            <div className="px-6 py-4 text-lg border-b transition-all hover:font-bold
+            <div className="px-6 py-6 text-lg border-b transition-all hover:font-bold
             text-gray-800 border-gray-200 hover:bg-gray-100 hover:text-[#16425B]">
               加入我們
             </div>

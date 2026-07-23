@@ -1,19 +1,12 @@
 "use client"
-
 import Link from "next/link";
 import Image from 'next/image';
-
-import { TbBrandYoutubeKids, TbHome } from "react-icons/tb";
-import { TbBowlChopsticks } from "react-icons/tb";
-import { TbInfoSquareRounded } from "react-icons/tb";
-import { TbBrandYoutubeFilled } from "react-icons/tb";
-import { TbBrandFacebookFilled } from "react-icons/tb";
-import { TbBrandInstagram } from "react-icons/tb";
+import { TbGasStation, TbMan, TbMapPinFilled} from "react-icons/tb";
 
 export default function MenuPC() {
 
   return (
-    <div className="bg-white w-full flex items-stretch h-auto md:h-[80px] shadow-sm">
+    <div className="bg-white w-full flex items-stretch h-auto md:h-[85px] shadow-sm">
       
       {/* <div className="flex justify-center gap-3 text-lg mt-3">
             <Link href="https://www.instagram.com/yuz824__/">
@@ -43,7 +36,7 @@ export default function MenuPC() {
         </div> */}
 
         <Link href="/Home" className="flex-1 flex outline-none border-none">
-        <div className="text-black px-4 py-2 gap-3 w-full h-full flex items-center justify-center
+        <div className="text-black text-[18px] gap-3 w-full h-full flex items-center justify-center
         whitespace-nowrap cursor-pointer transition-colors duration-300 hover:opacity-80 hover:text-gray-700">
             <Image src="/Logo_new.jpg" alt="LOGO" width={60} height={60}/>
             <span>首頁</span>
@@ -51,23 +44,23 @@ export default function MenuPC() {
         </Link>
 
         <Link href="/Branch" className="flex-1 flex">
-        <div className="text-black px-4 py-2 gap-1 w-full h-full flex items-center justify-center
+        <div className="text-black text-[18px] gap-1 w-full h-full flex items-center justify-center
         whitespace-nowrap cursor-pointer transition-colors duration-300 hover:opacity-80 hover:bg-[#16425B] hover:text-white">
-            <TbBowlChopsticks />服務據點
+            <TbMapPinFilled />服務據點
         </div>
         </Link>
 
         <Link href="/Services" className="flex-1 flex">
-        <div className="text-black px-4 py-2 gap-1 w-full h-full flex items-center justify-center
+        <div className="text-black text-[18px] gap-1 w-full h-full flex items-center justify-center
         whitespace-nowrap cursor-pointer transition-colors duration-300 hover:opacity-80 hover:bg-[#16425B] hover:text-white">
-            <TbBrandYoutubeKids/>產品與服務
+            <TbGasStation/>產品與服務
         </div>
         </Link>
 
         <Link href="/Joinus" className="flex-1 flex">
-        <div className="text-black px-4 py-2 gap-1 w-full h-full flex items-center justify-center
+        <div className="text-black text-[18px] gap-1 w-full h-full flex items-center justify-center
         whitespace-nowrap cursor-pointer transition-colors duration-300 hover:opacity-80 hover:bg-[#16425B] hover:text-white">
-            <TbBrandYoutubeKids/>加入我們
+            <TbMan/>加入我們
         </div>
         </Link>
     </div>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import MenuPC from "../component/menuPC"
 import MenuPh from "../component/menuPh"
 

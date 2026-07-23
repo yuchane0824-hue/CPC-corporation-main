@@ -1,7 +1,5 @@
-import Image from "next/image";
-import MenuPC from "../../component/menuPC"
-import MenuPh from "../../component/menuPh"
-import Footer from "../../component/footer"
+"use client"
+import Image from 'next/image'
 
 {/* 職員資料 */} 
 const staffData = [
@@ -46,68 +44,26 @@ export default function Joinus() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* 選單 */}      
-      <div className="w-full">
-        <div className="block sm:hidden">
-        <MenuPh />
-        </div>
-
-        <div className="sm:block hidden">
-          <MenuPC />
-        </div>
-      </div>      
+      
+      {/* 漸顯特效 */}
+      <style>{`
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(15px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+          animation: fadeUp 0.5s ease-out forwards;
+        }
+      `}</style>
 
       {/* 主頁面 */}
       <div className="w-full">
-        {/* 團隊組成 */}
-        <div className="p-10 sm:p-[80px] shadow-md border-b border-gray-200"> 
-          <h1 className="font-noto text-[60px] font-black text-center text-[#16425B] tracking-widest">團隊組成</h1>
-          <div className="w-70 h-[1px] mt-3 mx-auto rounded-full bg-[#16425B]"></div>
-
-          {/* 職員介紹 */}
-          <div className="mt-15 grid sm:grid-cols-4 grid-cols-1 gap-10">
-            {staffData.map((staff) => (
-              <div key={staff.id}
-                className="flex flex-col justify-center items-center
-                bg-[#16425B]/5 border border-t-4 border-gray-200 border-t-[#16425B] 
-                transition-shadow shadow-sm hover:shadow-md group">
-                
-                {/* 頭貼 */}
-                <div className="w-full aspect-square overflow-hidden shadow-md 
-                transition-shadow hover:shadow-xl duration-500 group">
-                  <Image 
-                    src={staff.image} 
-                    alt={staff.name}
-                    width={180} height={180}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* 職稱 */}
-                <div className="p-5 flex flex-col justify-center items-center">
-                  <h3 className="font-noto text-[38px] font-semibold text-center text-gray-900 tracking-widest">
-                    {staff.name}
-                  </h3>
-                  <div className="w-30 mt-1 h-[1px] mx-auto rounded-full bg-[#16425B]"></div>
-
-                  <p className="mt-4 text-[22px] font-light text-center text-gray-700">
-                    {staff.location}
-                  </p>
-                  <h5 className="text-[24px] font-md text-center text-gray-700">
-                    {staff.title}
-                  </h5>
-                </div>  
-              </div>
-            ))}  
-          </div>
-        </div>        
-
         {/* 職缺介紹 */}
-        <div className="p-10 sm:p-[80px] shadow-md border-b border-gray-200">
-          <h1 className="font-noto text-[60px] font-black text-center text-[#16425B] tracking-widest">目前職缺</h1>
-          <div className="w-70 h-[1px] mt-3 mx-auto rounded-full bg-[#16425B]"></div>
+        <div className="p-10 sm:p-[100px] shadow-md border-b border-white">
+          <h1 className="font-noto text-5xl font-black text-center text-[#16425B] tracking-widest">目前職缺</h1>
+          <div className="w-25 h-px mt-5 mx-auto rounded-full bg-[#16425B]/60"></div>
 
-            <div className="mt-15 gap-10 grid sm:grid-cols-2 grid-cols-1">        
+            <div className="animate-fade-up mt-15 gap-10 grid sm:grid-cols-2 grid-cols-1">        
               {jobsData.map((job) => (
                 <div 
                   key={job.id} 
@@ -150,7 +106,49 @@ export default function Joinus() {
             </div>
         </div>
 
-        <Footer />
+        {/* 團隊組成 */}
+        <div className="px-20 py-10 sm:p-[100px] shadow-md border-b border-white bg-[#16425B]/3"> 
+          <h1 className="font-noto text-5xl font-black text-center text-[#16425B] tracking-widest">團隊組成</h1>
+          <div className="w-30 h-px mt-5 mx-auto rounded-full bg-[#16425B]/60"></div>
+
+          {/* 職員介紹 */}
+          <div className="animate-fade-up mt-15 grid sm:grid-cols-4 grid-cols-1 gap-15">
+            {staffData.map((staff) => (
+              <div key={staff.id}
+                className="flex flex-col justify-center items-center
+                border border-t-4 border-gray-200 border-t-[#16425B] bg-[#16425B]/5
+                transition-shadow shadow-sm hover:shadow-md group">
+                
+                {/* 頭貼 */}
+                <div className="w-full aspect-square overflow-hidden shadow-md 
+                transition-shadow hover:shadow-xl duration-500 group">
+                  <Image 
+                    src={staff.image} 
+                    alt={staff.name}
+                    width={80} height={80}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* 職稱 */}
+                <div className="p-3 flex flex-col justify-center items-center">
+                  <h3 className="font-noto text-[36px] font-semibold text-center text-gray-900 tracking-widest">
+                    {staff.name}
+                  </h3>
+                  <div className="w-30 mt-2 h-[1px] mx-auto rounded-full bg-[#16425B]"></div>
+
+                  <p className="mt-3 text-[18px] font-light text-center text-gray-700">
+                    {staff.location}
+                  </p>
+                  <h5 className="text-[22px] font-md text-center text-gray-700">
+                    {staff.title}
+                  </h5>
+                </div>  
+              </div>
+            ))}  
+          </div>
+        </div>        
+     
       </div>
     </div>
   );
